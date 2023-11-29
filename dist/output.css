@@ -542,6 +542,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }
@@ -552,6 +556,10 @@ video {
 
 .h-60 {
   height: 15rem;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
 }
 
 .h-\[80vh\] {
@@ -574,12 +582,12 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.justify-center {
+  justify-content: center;
 }
 
-.justify-self-center {
-  justify-self: center;
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .border {
@@ -599,23 +607,23 @@ video {
   border-color: rgb(79 70 229 / var(--tw-border-opacity));
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .bg-\[conic-gradient\(var\(--tw-gradient-stops\)\)\] {
   background-image: conic-gradient(var(--tw-gradient-stops));
 }
 
-.from-indigo-500 {
-  --tw-gradient-from: #6366f1 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .from-indigo-200 {
   --tw-gradient-from: #c7d2fe var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(199 210 254 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-indigo-500 {
+  --tw-gradient-from: #6366f1 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -629,12 +637,12 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #475569 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.to-pink-500 {
-  --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
-}
-
 .to-indigo-200 {
   --tw-gradient-to: #c7d2fe var(--tw-gradient-to-position);
+}
+
+.to-pink-500 {
+  --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
 }
 
 .p-2 {
@@ -643,6 +651,15 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media (min-width: 768px) {
