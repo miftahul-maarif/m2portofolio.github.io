@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Agbalumo";
+        src: url("../src/asset/font/Agbalumo-Regular.ttf");
+
+    }
+
+    @font-face {
+        font-family: "exo";
+        src: url("../src/asset/font/Exo-VariableFont_wght.ttf");
+    }
+
+}

@@ -6,43 +6,443 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css" />
-    <!-- <link rel="stylesheet" href="/dist/style.css" /> -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .mystyle {
+            margin-top: 10px;
+        }
+    </style>
     <title>My Porofolio</title>
 </head>
 
-<!-- <body class="bg-[conic-gradient(var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200"> -->
-
 <body>
-    <div class="m-2 md:m-10 ">
-        <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5 h-[80vh]"> -->
-        <div class="grid grid-cols-2 gap-5 mb-5 h-[80vh]">
+    <header>
+        <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span
+                        class="self-center text-2xl font-exo font-semibold whitespace-nowrap dark:text-white">Portofolio</span>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <a href="asset/download/cv.pdf" target="_blank"
+                        class="text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Download
+                        CV
+                    </a>
+                    <button data-collapse-toggle="navbar-sticky" navbarToggler="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">button</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="#" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#Home" id="nav"
+                                class="block py-2 px-3 font-exo text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#Career" id="nav"
+                                class="block py-2 px-3 font-exo text-xl rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Career</a>
+                        </li>
+                        <li>
+                            <a href="#Ability" id="nav"
+                                class="block py-2 px-3 font-exo text-xl rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Ability</a>
+                        </li>
+                        <li>
+                            <a href="#Education" id="nav"
+                                class="block py-2 px-3 font-exo text-xl rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Education</a>
+                        </li>
+                        <li>
+                            <a href="#Contact" id="nav"
+                                class="block py-2 px-3 font-exo text-xl rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hompage -->
+    <div id="Home" class="h-16"></div>
+    <div class="m-5 gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div style=" border-radius: 25% 75% 25% 75% / 75% 25% 75% 25% ;"
-                class="h-full w-full p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                class="h-auto md:h-[80vh] w-full p-2 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500">
                 <div style="border-radius: 62% 38% 32% 68% / 29% 84% 16% 71%;"
-                    class="h-full w-full p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                    <div class=" flex justify-center border-2 border-indigo-600 ">
-                        <img class="h-[70vh]" src="/src/p.png" alt="">
+                    class="h-full w-full p-2 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500">
+                    <div class=" flex justify-center">
+                        <img class="h-auto md:h-[70vh] p-5" src="/src/asset/img/p.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="border-8 border-indigo-600 ">
-                <h1 class="text-center text-2xl font-sans ui-sans-serif">M</h4>
+            <div class="pt-5 grid grid-cols-1 place-content-center">
+                <h4 class="text-center text-4xl md:text-6xl font-Agbalumo m-3">Miftahul Ma'arif</h4>
+                <div class="gird bg-kuas bg-cover h-full w-72 justify-self-center">
+                    <h1 class="text-center text-2xl md:text-3xl font-exo text-white ">IT Suport</h1>
+                </div>
+                <div class="m-4">
+                    <p class=" text-center text-lg font-exo mb-5">" Tidak pandai menggabarkan diri dan selalu ingin
+                        mempelajari hal-hal baru dalam dunia teknologi "</p>
+                    <p class=" text-center text-lg font-bold font-exo">S1 Teknologi Informasi</p>
+                    <p class=" text-center text-lg font-exo">Institut Teknologi dan Bisnis Swadharma</p>
+                </div>
             </div>
         </div>
+    </div>
+    <!--end Hompage -->
 
-        <div class="grid grid-cols-2 h-60 gap-5 ">
-            <div class="h-1/2 border border-indigo-600">b</div>
-            <div>v</div>
-        </div>
-        <div class="grid grid-cols-2 h-60 gap-5 ">
-            <div class="h-1/2 border border-indigo-600">b</div>
-            <div class="h-full border border-indigo-600">v</div>
-        </div>
-        <div class="grid grid-cols-2 h-60 gap-5 ">
-            <div class="h-1/2 border border-indigo-600">b</div>
-            <div>v</div>
+    <!-- Career -->
+    <div id="Career" class="h-16"></div>
+    <div class="grid w-full p-10 gap-5 bg-indigo-600">
+        <h5 class="text-center text-4xl font-Agbalumo">Career</h4>
+            <ol class=" items-center sm:flex">
+                <li class="relative h-auto md:h-60 w-full mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div
+                            class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="#"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                            </svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        <h3 class="flex sm:hidden px-2 text-lg font-exo font-semibold">Teknisi</h3>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                        <h3 class="hidden sm:flex text-lg font-semibold dark:text-white mb-3">Teknisi</h3>
+                        <time class="block mb-2 text-sm leading-none font-exo text-gray-300 dark:text-gray-500">
+                            CV. Gemilang Jaya Teknik, Juli 2016 - Juni 2017</time>
+                        <p class="text-base font-exo dark:text-gray-400">
+                            Maintenace kerusakan AC,Kulkas dan dispenser, Bongkar pasang AC, Service bulanan AC Client.
+                        </p>
+                    </div>
+                </li>
+                <li class="relative h-auto md:h-60 mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div
+                            class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="#"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                            </svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        <h3 class="flex sm:hidden px-2 text-lg font-semibold">Staff Tendik / TU</h3>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                        <h3 class="hidden sm:flex text-lg font-semibold dark:text-white mb-3">Staff Tendik / TU
+                        </h3>
+                        <time class="block mb-2 text-sm leading-none font-exo text-gray-300 dark:text-gray-500">
+                            MI Raudlatul Mubtadiin, Juli 2017 - Juni 2023</time>
+                        <p class="text-base font-exo dark:text-gray-400">
+                            Mengelola dan Maintenace Asset IT, Membatu guru dan siswa dalam maslah IT, Instalasi
+                            jaringan lokal, Setup Aplikasi dari pihak ketiga, Melakuan Administrasi Guru dan siswa pada
+                            aplikasi web server kemenag dan kemendikbud.
+                        </p>
+                    </div>
+                </li>
+                <li class="relative h-auto md:h-60 mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                        <div
+                            class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="#"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                            </svg>
+                        </div>
+                        <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                        <h3 class="flex sm:hidden px-2 text-lg font-semibold">IT Suport</h3>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                        <h3 class="hidden sm:flex text-lg font-semibold dark:text-white mb-3">IT Suport
+                        </h3>
+                        <time class="block mb-2 text-sm leading-none font-exo text-gray-300 dark:text-gray-500">
+                            PT.Cipta Aneka Air, Juli 2013 - Desember 2023</time>
+                        <p class="text-base font-exo dark:text-gray-400">
+                            Mengelola dan Maintenace Asset IT: cctv, finger, router, printer, fotocpy, telpon, isntalasi
+                            pc karyawan baru, update os/isntall ulang PC, Maintenace dan instalasi jaringan, Develop
+                            website dan maintenaice website bersama dengan tim, Backup aplikasi server.
+                        </p>
+                    </div>
+                </li>
+            </ol>
+    </div>
+    <!-- end Career -->
+
+    <!-- Ability -->
+    <div id="Ability" class="h-16"></div>
+    <div class="w-full">
+        <h5 class="text-center text-4xl font-Agbalumo my-3">Ability</h5>
+        <div class="grid md:grid-cols-3 max-w-screen-lg mx-auto px-5 md:px-0 m-4 gap-8 ">
+            <div
+                class="w-full  rounded-lg bg-indigo-600 shadow-black shadow-lg py-4 px-10 outline outline-2 outline-fuchsia-400 outline-offset-4">
+                <div class="text-xl text-center font-semibold font-exo">
+                    Software
+                </div>
+                <ul class="text-lg text-left list-disc list-outside dark:text-gray-400">
+                    <li>
+                        Microsoft office
+                    </li>
+                    <li>
+                        Adobe Photoshop
+                    </li>
+                    <li>
+                        Adobe Ilustrator
+                    </li>
+                    <li>
+                        Paket Tracer
+                    </li>
+                    <li>
+                        Visual Studi Code
+                    </li>
+                    <li>
+                        XAMPP
+                    </li>
+                </ul>
+            </div>
+
+            <div
+                class="w-full  rounded-lg bg-indigo-600 shadow-black shadow-lg py-4 px-10 outline outline-2 outline-fuchsia-400 outline-offset-4">
+                <div class="text-xl text-center font-semibold font-exo">
+                    Hardware
+                </div>
+                <ul class="text-lg text-left list-disc list-outside dark:text-gray-400">
+                    <li>
+                        PC Destop
+                    </li>
+                    <li>
+                        Laptop
+                    </li>
+                    <li>
+                        Printer
+                    </li>
+                    <li>
+                        Infocus/Projector
+                    </li>
+                    <li>
+                        CCTV
+                    </li>
+                    <li>
+                        Router
+                    </li>
+                    <li>
+                        Fingger
+                    </li>
+                    <li>
+                        AC,Kulkas, Dispenser dan Kipas
+                    </li>
+                </ul>
+            </div>
+
+            <div
+                class="w-full  rounded-lg bg-indigo-600 shadow-black shadow-lg py-4 px-10 outline outline-2 outline-fuchsia-400 outline-offset-4">
+                <div class="text-xl text-center font-semibold font-exo">
+                    Framework / Bahasa Pemrograman
+                </div>
+                <ul class="text-lg text-left list-disc list-outside dark:text-gray-400">
+                    <li>
+                        Laravel
+                    </li>
+                    <li>
+                        Wordpress
+                    </li>
+                    <li>
+                        Bootstrap
+                    </li>
+                    <li>
+                        Tailwind
+                    </li>
+                    <li>
+                        PHP
+                    </li>
+                    <li>
+                        Javascript
+                    </li>
+                    <li>
+                        SQL
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+    <!-- end Ability -->
+
+    <!-- Education -->
+    <div id="Education" class="h-16"></div>
+    <div class="w-full">
+        <h5 class="text-center text-4xl font-Agbalumo my-3">Education</h5>
+        <div class="grid content-center md:grid-cols-3 grid-flow-row max-w-screen-lg mx-auto px-5 md:px-0 m-4 ">
+            <div class="hidden md:flex row-span-4 p-5 bg-indigo-600 rounded-tr-lg rounded-bl-[70px] rounded-tl-lg">
+                <img class="object-contain w-full rounded-tr-[40px] rounded-bl-[70px]" src=" /src/asset/img/itbs.png"
+                    alt="">
+            </div>
+            <div class="justify-self-center col-span-2 md:hidden mb-5 ">
+                <div class=" bg-indigo-600 h-20 w-20  rounded-full p-1">
+                    <img class="object-contain h-full w-full rounded-full" src=" /src/asset/img/itbsm.png" alt="">
+                </div>
+            </div>
+            <div class="grid content-center col-span-2 md:px-5">
+                <p class="text-lg md:text-2xl font-bold font-exo">Institut Teknologi dan Bisnis Swadharma</p>
+                <p class="md:hidden text-[14px] font-semibold font-exo mb-5">Jl. Malaka No. 3 Jakarta Kota, Jakarta
+                    Barat.
+                </p>
+            </div>
+            <div class="grid content-center col-span-2 row-span-2 px-5">
+                <div class=" grid grid-cols-2 md:grid-cols-4 px-3">
+                    <p class=" text-lg font-exo">Jurusan </p>
+                    <p class=" md:col-span-3 text-lg font-exo">: Teknik Informatika</p>
+                    <p class=" text-lg font-exo">NIM </p>
+                    <p class=" md:col-span-3 text-lg font-exo">: 17201001</p>
+                    <p class=" text-lg font-exo">Tahun Masuk </p>
+                    <p class=" md:col-span-3 text-lg font-exo">: 2017</p>
+                    <p class=" text-lg font-exo">Tahun Lulus </p>
+                    <p class=" md:col-span-3 text-lg font-exo">: 2021</p>
+                    <p class=" text-lg font-exo">Akreditasi Jurusan </p>
+                    <p class=" md:col-span-3 text-lg font-exo">: B</p>
+                    <p class=" text-lg font-exo">IPK </p>
+                    <p class=" md:col-span-3 text-lg font-exo">: 3,44</p>
+                    <p class=" text-lg font-exo">No.Ijazah </p>
+                    <p class=" text-sm md:text-lg md:col-span-3 font-exo">: 552022021000436</p>
+
+                </div>
+            </div>
+            <div class="hidden md:grid content-center col-span-2 p-5 rounded-br-lg bg-indigo-600">
+                <p class="text:lg font-bold font-exo">Alamat Kampus : Jl. Malaka No. 3 Jakarta Kota, Jakarta Barat.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end Education -->
+
+    <!-- Contact -->
+    <div id="Contact" class="h-16"></div>
+    <div class="w-full text-white bg-indigo-600 py-10 ">
+        <h5 class="text-center text-4xl font-Agbalumo mb-5 ">Contact</h5>
+        <div class="grid md:grid-cols-2 px-3 md:px-0 max-w-screen-lg mx-auto ">
+            <div class="grid md:grid-cols-2">
+                <a href="https://wa.me/+6281388546912" target="_blank"
+                    class="row-span-3 justify-self-center mb-5 md:mb-0">
+                    <img class=" h-full drop-shadow-[0_10px_10px_rgba(0,0,0,25)] hover:drop-shadow-[0_3px_3px_rgba(255,255,255,255)]"
+                        src=" /src/asset/img/wa.png" alt="">
+                </a>
+                <div class="flex items-end pl-10 md:pl-5 mb-5 md:mb-0">
+                    <a href="https://t.me/+6281388546912" target="_blank"
+                        class="flex items-end hover:drop-shadow-[0_20px_20px_rgba(255,255,255,10)] hover:underline underline-offset-8">
+                        <img class=" h-11 drop-shadow-[0_5px_5px_rgba(0,0,0,25)] hover:drop-shadow-none"
+                            src=" /src/asset/img/tele.png" alt="">
+                        <p class="text-center text-xl md:text-lg font-exo">Telegram</p>
+                    </a>
+                </div>
+                <div class="flex items-center pl-10 md:pl-5 mb-5 md:mb-0">
+                    <a href="mailto:mif276212@gmail.com" target="_blank"
+                        class="flex items-end hover:drop-shadow-[0_20px_20px_rgba(255,255,255,10)] hover:underline underline-offset-8">
+                        <img class="h-11 drop-shadow-[0_5px_5px_rgba(0,0,0,25)] hover:drop-shadow-none"
+                            src=" /src/asset/img/email.png" alt="">
+                        <p class="text-center text-xl md:text-lg font-exo">mif276212@gmail.com</p>
+                    </a>
+                </div>
+                <div class="flex items-start pl-10 md:pl-5 mb-5 md:mb-0">
+                    <a href="tel:081388546912"
+                        class="flex items-end hover:drop-shadow-[0_20px_20px_rgba(255,255,255,10)] hover:underline underline-offset-8">
+                        <img class="h-11 drop-shadow-[0_5px_5px_rgba(0,0,0,25)] hover:drop-shadow-none"
+                            src=" /src/asset/img/tel.png" alt="">
+                        <p class="text-center text-xl md:text-lg font-exo">081-388-546-912</p>
+                    </a>
+                </div>
+            </div>
+            <div class="pt-10 md:pl-5 md:pt-5 justify-center">
+                <p class="text-center text-2xl font-Agbalumo font-semi-bold mb-5"> Residence</p>
+                <div class="h-60 mb-5 rounded-lg">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2064.146702907896!2d106.79532502309326!3d-6.131781067462943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d009ddd2301%3A0xec8bae2f112d817d!2sRusunawa%20Penjaringan!5e0!3m2!1sid!2sid!4v1701885223992!5m2!1sid!2sid"
+                        width="100%" height="100%" class="rounded-lg drop-shadow" style="border:0;" allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <a href="https://maps.app.goo.gl/rSxjJHauYoRpMn1X7" target="_blank"
+                    class="hover:underline underline-offset-8">
+                    <p class="text-center text-lg font-exo">Sarusunawa Tower C Kel.Penjaringan
+                        Kec.Penjaringan Kota Jakarta Utara DKI Jakarta 14440 </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end Contact -->
+
+    <!-- footer -->
+    <div class="max-w-screen-lg mx-auto py-5">
+        <p class="text-center text-lg font-exo">Created With Tailwind CSS @Alexmurphi</p>
+
+    </div>
+    <!-- end footer -->
+
+    <!-- ====== Back To Top Start ====== -->
+    <button onclick="topFunction()" id="ontop" class="ontop relative">
+        <div
+            class="fixed bottom-0 right-0 mb-3 mr-3 p-3 rounded-full border-2 border-fuchsia-400 hover:bg-fuchsia-400 ">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 10 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 13V1m0 0L1 5m4-4 4 4" />
+            </svg>
+        </div>
+    </button>
+    <!-- ====== Back To Top End ====== -->
+
+    <!-- <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"> -->
+    <script>
+        const toggleCollapse = (elementId, show = true) => {
+            const collapseEl = document.getElementById(elementId);
+
+            if (show) {
+                collapseEl.classList.remove('hidden');
+            } else {
+                collapseEl.classList.add('hidden');
+            }
+        }; // Toggle target elements using [data-collapse-toggle]
+
+
+        document.querySelectorAll('[data-collapse-toggle]').forEach(function (collapseToggleEl) {
+            var collapseId = collapseToggleEl.getAttribute('data-collapse-toggle');
+            collapseToggleEl.addEventListener('click', function () {
+                toggleCollapse(collapseId, document.getElementById(collapseId).classList.contains('hidden'));
+            });
+        });
+        window.toggleCollapse = toggleCollapse;
+    </script>
+
+    <script>
+        //scroll on top button
+        const ontop = document.getElementById("ontop");
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                ontop.style.display = "block";
+            } else {
+                ontop.style.display = "none";
+            }
+        }
+
+
+
+    </script>
 </body>
 
 </html>
